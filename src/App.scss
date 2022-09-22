@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600&family=Slabo+27px&display=swap');
+
+$primary: #686868;
+
+
+$font-family-sans-serif: 'Roboto Slab', serif;
+
+
+$btn-padding-y-sm: 9px;
+$btn-padding-x-sm: 16px;
+$btn-border-radius-sm: 7px;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
 body {
     margin: 0;
     padding: 0;
 }
+
+.slbo-font {
+    font-family: 'Slabo 27px', serif;
+}
+
+.mono-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+//for home page
+
+.active {
+  //transform: translate(10px);
+  transition: all 0.25s ease-in-out;
+  transform: rotate(65deg) translateY(24px);
+}
+
+.s1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+//for typed.js
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+  font-size: 30px;
+  margin-bottom: 12px;
+  z-index: 3;
+}
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+
+.aaa {
+  width: 75%;
+  overflow: hidden;
+}
+
+.built {
+  height: 650px;
+}
+
+.s1-r1 {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 200px;
+
+}
+.fp {
+  font-size: 14px;
+}
+
+.fil {
+  transition: all 0.5s ease-in-out;
+}
+
+//for btn
+
+.for-con-btn {
+  padding: 9px 15px;
+  color: #666;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  border: 3px solid #666;
+  background: transparent;
+  transition: all 2s ease;
+}
+
+.one {
+  position: absolute;
+  content: '';
+  top: 1.5em;
+  left: 50%;
+  width: 20em;
+  height: 20em;
+  opacity: 0.5;
+  background: #666;
+  margin-left: -10em;
+  border-radius: 42.5%;
+  transform-origin: 50% 50%;
+  animation: wave 6s infinite linear;
+  transition: all 2s ease, top 1.5s ease;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.975);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+:hover.one {
+  top: 4px;
+  color: rgba(68, 68, 68, 0.84);
+}
+
+:hover.fil{
+  transform: scale(1.4);
+}
+
+@media only screen and (max-width: 1439px) {
+  .s1-r1 {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .s1-r1 {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .s1-r1 {
+    padding:0;
+  }
+  .aaa {
+    width: 100%;
+  }
+  .built {
+    margin-left: -15px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  .built {
+    margin-left: -15px;
+    height: 400px;
+  }
+  .s1-r1{
+    height: 400px;
+    padding: 5px;
+  }
+  .fp {
+    font-size: 12px;
+  }
+  .for-con-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 2px solid #666;
+  }
+}

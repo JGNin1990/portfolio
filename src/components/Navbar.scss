@@ -1,0 +1,40 @@
+//for nav-bar
+
+a{
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.fl {
+  padding: 5px;
+  font-size: 14px;
+  color: rgba(141, 141, 141, 0.8);
+  transition: all 0.25s ease-in-out;
+}
+
+:hover.fl {
+  transform: rotate(45deg) translateY(20px);
+}
+
+@media only screen and (max-width: 993px)  {
+  .nav-bar {
+    top: 8%;
+    left: 0;
+  }
+  :hover.fl {
+    transform: rotate(0) translateY(0);
+  }
+}
+
+@media only screen and (max-width: 450px)  {
+  .nav-bar {
+    top: 4%;
+    left: 0;
+  }
+}
+
